@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600&family=Piedra&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    background-color:snow;
+    height: 75px;
+
+}
+:root{
+    --navbar-height:55px;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    top: 0;
+    left:0; 
+
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(83, 81, 81);
+    width:100%;
+    height: 100px;
+    
+
+}
+#logo{
+    margin: 10px 10px;
+}
+#logo img{
+    height: 120px;
+    width: 150px;
+   
+    margin: 3px 100px;
+}
+#navbar ul{
+    display: flex;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 2.1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius:30px;
+    text-decoration: none;
+    color: snow;
+    margin-left: 25px;
+}
+#navbar ul li a:hover{
+    background: white;
+    color: black;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height:730px;
+}
+#home::before{
+    content: "";
+    background:url('bodybg.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 156%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+}
+#home p{
+        color: black;
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+        font-size: 1.7rem;
+        font-weight: bold;
+        
+}
+/* Checkin section */
+#checkin{
+    height: 300px;
+    width: 75%;
+    margin:0 10%;
+    color: snow;
+}
+#checkin::before{
+    content: "";
+    position:absolute;
+    height: 220px;
+    width:85%;
+    background-color: rgb(136, 128, 128);
+    opacity: 0.8;
+    z-index: -2;
+    border-radius: 30px;
+}
+#checkin div{
+    border-radius: 10px;
+}
+.font{
+    font-size: 34px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    padding: 20px 30px;
+    width: 108%;
+}
+.date-picker{
+    float: left;
+    margin: 19px;
+    background: #ffffff;
+    position: relative;
+    padding: 18px;
+}
+.person{
+    float: left;
+    display: flex;
+    width: 480px;
+    height: 51px;
+    margin-top: 19px;
+    background: #ffffff;
+    position: relative;
+    padding: 19px;
+
+}
+.room{
+    wiidth:50px;
+    height:px;
+    margin-left: 30px;
+    background: #ffffff;
+    position: relative;
+    ;
+}
+    
+.checkin-font{
+    font-size: 16px;
+    color:snow;
+    background-color: gray;
+    border-radius: 10px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    padding:5px;
+}
+
+#checkin form button{
+    margin-left: 20px;
+    height: 80px;
+    width:100px;
+    background: #F9AD81;
+    border: 1px solid #F9AD81;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 20px 27px;
+    cursor: pointer;
+}
+/* Intro */
+.intro{
+   
+    background-color:gray;
+    height:450px;
+    padding: 100px 150px;
+}
+.container{
+
+    border: 14px solid coral;
+    height:400px;
+    padding: 20px;
+}
+.rowcontainer{
+    float: left;
+    height:380px;
+    margin: 10px 30px;
+    width:44%;
+}
+.column{
+    float: left;
+    
+    height: 300px;
+    width: 500px;
+    padding: 20px;
+}
+.cntfont{
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: snow;
+}
+#content{
+    padding-top: 40px;
+
+}
+#contentright{
+    margin-top: 190px;
+}
+/* Room Type */
+#roomtype{
+    height: 600px;
+    width: 100%;
+}
+#rtbox1{
+   float: left;
+   background: url('bg1.png') no-repeat  center center/cover;
+    width: 48%;
+    height: 560px;
+    padding:20px;
+    
+}
+#rtbox2{
+    float: left;
+    width: 49%;
+    height: 580px;
+    padding-top: 20px;
+    background: url('bg2.png')no-repeat  center center/cover;
+   
+}
+.rthead{
+    padding: 80px;
+    margin-bottom: 20px;
+   
+}
+.rtfacility ul{
+    display: flex;
+    margin-bottom: 35px;
+    
+}
+.rtfacility ul li{
+    list-style: none;
+    padding: 20px 50px;
+    font-family: cursive;
+    font-weight: 800;
+}
+/* Gallery */
+#gallery{
+    height: 700px;
+    background: url('gbg1.jpg')no-repeat center center/cover;
+}
+#gallery1{
+    background-color: gray;
+    height: 342px;
+    padding:0px 200px;
+}
+#gallery1 img{
+    width:1045px;
+    margin-top: -335px;
+}
+/* About */
+#about{
+    height:530px;
+    background-color: gray;
+    padding: 70px 200px;
+}
+.about-l{
+    float: left;
+   background: gray;
+   
+    width: 40%;
+    height: 500px;
+    padding:20px;
+}
+.about-r{
+   display: flex;
+   
+    width: 49%;
+    height: 480px;
+    padding: 30px;
+}
+
+.abouthead{
+    height:100px;
+    padding: 48px;
+}
+
+.abouthead p{
+    margin-top: 60px;
+    margin-bottom: 13px;
+}
+.about-r img{
+    margin:20px;
+    height:210px;
+    width:250px;
+    
+}
+#footer{
+    background-color: black;
+    color:snow;
+    height: 300px;
+    
+    padding: 10px 198px;
+}
+.foot-container{
+    height: 100%;
+    padding-right: 30px;
+    
+}
+.foot-container div{
+    display: flex;
+    box-sizing: border-box;
+    float: left;
+    height:300px;
+    width:31%;
+    padding:60px 26px;
+}
+.foot-container span{
+    font-family: cursive;
+    font-size: 20px;
+}
+.foot-container p{
+    font-size: 16px;
+    color: coral;
+}
+/* utility */
+.h-primary{
+    font-family: Piedra;
+    font-size: 3.2rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: Piedra;
+    font-size: 2.2rem;
+    padding: 14px;
+}
+.btn{
+    padding: 10px 23px;
+    margin: 18px;
+    background-color:transparent;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 310px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+   
+}
+.btn1{
+    padding: 10px 23px;
+    margin: 18px;
+    background-color:coral;
+    border: 2px solid coral;
+    width: 260px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.btn:hover{
+    background-color: tomato;
+    
+}
+.center{
+    text-align: center;
+}
